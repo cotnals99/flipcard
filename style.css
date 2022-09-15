@@ -18,6 +18,7 @@
 
 .card {
     width: 380px;
+    margin: 10px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -96,6 +97,10 @@
     transform: scale(120%)
 }
 
-.card:hover .card-inner{
+/* .card:hover .card-inner{
     transform: rotateY(-180deg)
-}
+} */
+
+.card.is-flipped .card-inner {
+    transform: rotateY(-180deg);
+  }
